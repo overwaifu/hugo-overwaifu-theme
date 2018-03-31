@@ -1,0 +1,13 @@
+name = "Mercy"
+license = "MIT"
+licenselink = "https://github.com/leonidboykov/hugo-mercy-theme/blob/master/LICENSE.md"
+description = "Minimal clean blog theme for Hugo"
+homepage = "https://leonidboykov.com"
+tags = ["flexbox", "blog", "clean", "responsive", "milligram"]
+features = ["blog", "disqus"]
+min_version = "0.37"
+
+[author]
+  name = "Leonid Boykov"
+  homepage = "https://leonidboykov.com"
+
