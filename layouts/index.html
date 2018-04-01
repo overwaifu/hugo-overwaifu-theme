@@ -14,7 +14,7 @@
         </div>
 
         <div class="column">
-          {{ range first 1 (sort $.Site.Data.overwaifu.characters "score.all" "desc") }}
+          {{ range first 1 (sort .Site.Data.overwaifu.characters "score.all" "desc") }}
           <div class="columns is-mobile">
             <div class="column is-3-mobile is-2-tablet">
               <span class="icon is-large ow-ohi-{{ .slug }}" style="font-size: 3em"></span>
@@ -81,7 +81,7 @@
         </div>
         <div class="column has-text-centered is-hidden-mobile">
           {{ $fame_waifu := index .Site.Data.overwaifu.characters .Site.Data.overwaifu.achievements.fame_waifu.character }}
-          <span class="ow-ohi-{{ .Site.Data.overwaifu.achievements.fame_waifu }}" style="font-size: 10rem"></span>
+          <span class="ow-ohi-{{ .Site.Data.overwaifu.achievements.fame_waifu.character }}" style="font-size: 10rem"></span>
         </div>
       </div>
     </div>
