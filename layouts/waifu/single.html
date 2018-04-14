@@ -11,27 +11,27 @@
             </p>
           </div>
           <div class="column is-8-tablet is-7-mobile">
-            <h1 class="title is-2 is-overwatch">{{ .Title }}</h1>
-            <h3 class="subtitle heading is-overwatch is-4 has-text-grey-light">{{ $char.real_name }}</h3>
+            <h1 class="title heading is-2">{{ .Title }}</h1>
+            <h3 class="subtitle heading is-4 has-text-grey-light">{{ $char.real_name }}</h3>
           </div>
         </div>
       </div>
       <div class="column is-8">
         <div class="columns is-mobile">
           <div class="column is-3-tablet is-3-mobile has-text-centered">
-            <p><span class="icon tooltip is-tooltip-top is-tooltip-primary" data-tooltip="Skins"><i class="ow-skin has-text-primary"></i></span></p>
+            <p><span class="icon tooltip is-tooltip-top is-tooltip-primary" data-tooltip="Skins"><i class="fas fa-female has-text-primary"></i></span></p>
             <p class="title is-5">{{ len $char.skins }}</p>
           </div>
           <div class="column is-3-tablet is-3-mobile has-text-centered">
-            <p><span class="icon tooltip is-tooltip-top is-tooltip-success" data-tooltip="Safe images"><i class="ow-heart-o has-text-success"></i></span></p>
+            <p><span class="icon tooltip is-tooltip-top is-tooltip-success" data-tooltip="Safe images"><i class="far fa-heart has-text-success"></i></span></p>
             <p class="title is-5">{{ $char.score.safe }}</p>
           </div>
           <div class="column is-3-tablet is-3-mobile has-text-centered">
-            <p><span class="icon tooltip is-tooltip-top is-tooltip-warning" data-tooltip="Questionable images"><i class="ow-heart has-text-warning"></i></span></p>
+            <p><span class="icon tooltip is-tooltip-top is-tooltip-warning" data-tooltip="Questionable images"><i class="fas fa-heart has-text-warning"></i></span></p>
             <p class="title is-5">{{ $char.score.questionable }}</p>
           </div>
           <div class="column is-3-tablet is-3-mobile has-text-centered">
-            <p><span class="icon tooltip is-tooltip-top is-tooltip-danger" data-tooltip="Explicit images"><i class="ow-hot has-text-danger"></i></span></p>
+            <p><span class="icon tooltip is-tooltip-top is-tooltip-danger" data-tooltip="Explicit images"><i class="fas fa-fire has-text-danger"></i></span></p>
             <p class="title is-5">{{ $char.score.explicit }}</p>
           </div>
         </div>
@@ -64,19 +64,19 @@
           </div>
           <div class="card-content">
             <p class="title heading is-4 has-text-{{ .rarity }}">{{ .name }}</p>
-            <p class="subtitle heading is-overwatch is-6 has-text-grey-light">{{ .event | default "Default" }}</p>
+            <p class="subtitle heading is-6 has-text-grey-light">{{ .event | default "Default" }}</p>
 
             <div class="columns is-mobile">
               <div class="column has-text-centered">
-                <p><span class="icon tooltip is-tooltip-top is-tooltip-success" data-tooltip="Safe images"><i class="ow-heart-o has-text-success"></i></span></p>
+                <p><span class="icon tooltip is-tooltip-top is-tooltip-success" data-tooltip="Safe images"><i class="far fa-heart has-text-success"></i></span></p>
                 <p class="title is-5">{{ .score.safe | default 0 }}</p>
               </div>
               <div class="column has-text-centered">
-                <p><span class="icon tooltip is-tooltip-top is-tooltip-warning" data-tooltip="Questionable images"><i class="ow-heart has-text-warning"></i></span></p>
+                <p><span class="icon tooltip is-tooltip-top is-tooltip-warning" data-tooltip="Questionable images"><i class="fas fa-heart has-text-warning"></i></span></p>
                 <p class="title is-5">{{ .score.questionable | default 0 }}</p>
               </div>
               <div class="column has-text-centered">
-                <p><span class="icon tooltip is-tooltip-top is-tooltip-danger" data-tooltip="Explicit images"><i class="ow-hot has-text-danger"></i></span></p>
+                <p><span class="icon tooltip is-tooltip-top is-tooltip-danger" data-tooltip="Explicit images"><i class="fas fa-fire has-text-danger"></i></span></p>
                 <p class="title is-5">{{ .score.explicit | default 0 }}</p>
               </div>
             </div>
@@ -102,11 +102,11 @@
       <hr />
       <blockquote>
         <p>
-          <span class="icon"><i class="ow-heart-o has-text-success"></i></span> Safe posts are images that you would not feel guilty looking at openly in public. Pictures of nudes, exposed nipples or pubic hair, cameltoe, or any sort of sexually suggestive pose are NOT safe and belong in questionable. Swimsuits and lingerie are borderline cases; some are safe, some are questionable.
+          <span class="icon"><i class="far fa-heart has-text-success"></i></span> Safe posts are images that you would not feel guilty looking at openly in public. Pictures of nudes, exposed nipples or pubic hair, cameltoe, or any sort of sexually suggestive pose are NOT safe and belong in questionable. Swimsuits and lingerie are borderline cases; some are safe, some are questionable.
           <br />
-          <span class="icon"><i class="ow-heart has-text-warning"></i></span> Basically anything that isn't safe or explicit. This is the great middle area, and since it includes unrated posts, you shouldn't really expect anything one way or the other when browsing questionable posts.
+          <span class="icon"><i class="fas fa-heart has-text-warning"></i></span> Basically anything that isn't safe or explicit. This is the great middle area, and since it includes unrated posts, you shouldn't really expect anything one way or the other when browsing questionable posts.
           <br />
-          <span class="icon"><i class="ow-hot has-text-danger"></i></span> Any image where the vagina or penis are exposed and easily visible. This includes depictions of sex, masturbation, or any sort of penetration.
+          <span class="icon"><i class="fas fa-fire has-text-danger"></i></span> Any image where the vagina or penis are exposed and easily visible. This includes depictions of sex, masturbation, or any sort of penetration.
         </p>
         <p>
           See <a href="/credits">credits</a> for proper credits.
