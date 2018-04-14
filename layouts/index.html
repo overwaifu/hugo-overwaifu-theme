@@ -13,10 +13,10 @@
         <div class="column">
           {{ range first 1 (sort .Site.Data.overwaifu.characters "score.all" "desc") }}
           <div class="columns is-mobile">
-            <div class="column is-3-mobile is-2-tablet">
-              <span class="icon is-large ow-ohi-{{ .slug }}" style="font-size: 3em"></span>
+            <div class="column is-hidden-mobile is-2-tablet">
+              <span class="icon is-large ow-ohi-{{ .key }}" style="font-size: 3em"></span>
             </div>
-            <div class="column is-6-mobile is-6-tablet">
+            <div class="column">
               <p class="title heading is-4">{{ .name }}</p>
               <p class="subtitle heading is-6 is-overwatch">{{ .real_name }}</p>
             </div>
@@ -28,10 +28,10 @@
           {{ end }}
           {{ range first 2 (after 1 (sort $.Site.Data.overwaifu.characters "score.all" "desc")) }}
           <div class="columns is-mobile">
-            <div class="column is-3-mobile is-2-tablet is-offset-1-tablet">
-              <span class="icon is-large ow-ohi-{{ .slug }}" style="font-size: 3em"></span>
+            <div class="column is-hidden-mobile is-2-tablet is-offset-1-tablet">
+              <span class="icon is-large ow-ohi-{{ .key }}" style="font-size: 3em"></span>
             </div>
-            <div class="column is-6-mobile is-5-tablet">
+            <div class="column">
               <p class="title heading is-5">{{ .name }}</p>
               <p class="subtitle heading is-6 is-overwatch">{{ .real_name }}</p>
             </div>
